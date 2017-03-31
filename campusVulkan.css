@@ -1,4 +1,11 @@
-     html, body{
+
+/*DIN Next LT Pro Light*/
+@import url('https://www.fontify.me/wf/5791fea5cf3ff4352ab8e7f3cccc8e23');   
+
+/*DIN Neuzeit Grotesk Bold Cond*/
+@import url('https://www.fontify.me/wf/a43ffc0f9675eb7bb6611c0db69d7ae9');
+
+html, body{
         background-color: white;           
         margin: 0;
         }
@@ -34,3 +41,12 @@
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
+
+#CampusVulkan{
+        font-family: font84115;
+        top: 10px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    
+}

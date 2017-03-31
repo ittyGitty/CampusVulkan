@@ -47,7 +47,8 @@ die();
         
         
         <div id="headerContainer">
-            <img id="headerCampus" src= "CampusVulkan.PNG" alt="Westerdals Oslo ACT - Campus Vulkan">
+            <!--<img id="headerCampus" src= "CampusVulkan.PNG" alt="Westerdals Oslo ACT - Campus Vulkan">-->
+            <h1 id= CampusVulkan>Campus Vulkan</h1>
             
             <div id="topBorder"></div>
             
