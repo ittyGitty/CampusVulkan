@@ -13,6 +13,7 @@ html, body{
         
     #headerContainer *{
         position: absolute;
+        margin: 0;
         }
         
         
@@ -26,7 +27,7 @@ html, body{
     #topBorder{
         height: 40px;
         width: 100%;
-        top: 50px;
+        top: 20px;
         background-image: url(wHeaderLiten.jpg);
         position: absolute;
     }
@@ -41,8 +42,8 @@ html, body{
 
 
 ul.meny {
-    width: 60%;
-    padding:0;
+    padding-top: 70px;
+    width: 50%;
     list-style: none;
     background-color: white;
     text-align:center;
