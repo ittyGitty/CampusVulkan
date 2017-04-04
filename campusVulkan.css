@@ -10,13 +10,11 @@ html, body{
         margin: 0;
         }
         
-        /* VELDIG nyttig: her blir alt inni containeren effektert ved bruk av container*. Position: absolute vil gjøre at elementene ikke bryr seg om hverandre, men legger seg bak hverandre fremfor å dytte på hverandre*/
         
     #headerContainer *{
         position: absolute;
         }
         
-        /*Containeren er "relative", den blir flyttet utfra hvor den dukker opp på skjermen*/
         
     #headerContainer{
         position: relative;
@@ -32,21 +30,58 @@ html, body{
         background-image: url(wHeaderLiten.jpg);
         position: absolute;
     }
-    
-    #headerCampus{
-        height: 60px;
-        width: 600px;
-        top: 30px;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-    }
 
-#CampusVulkan{
+    #CampusVulkan{
         font-family: font84115;
         top: 10px;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
+    }
+
+
+ul.meny {
+    width: 60%;
+    padding:0;
+    list-style: none;
+    background-color: white;
+    text-align:center;
+    font-family: sans-serif; 
+}
+.meny li { 
+    display: inline-block;
+    width:20%;
+    margin:0;
+    padding:0;
     
 }
+.meny a {
+    text-align:center;
+    padding:12px 5px 12px 5px;
+    margin:0; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display:block;
+    text-decoration: none;
+    color: black;
+}
+
+li a.active {
+    background-color: black;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: lightgray;
+    color: white;
+
+ul.meny li:first-child a{
+    border: none;
+}
+ul.meny li:second-child a {
+    border:none;
+}
+ul.meny li:last-child a {
+    border:none;
+}
+
