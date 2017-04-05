@@ -54,14 +54,12 @@ ul.meny {
     width:20%;
     margin:0;
     padding:0;
-    
 }
 .meny a {
     text-align:center;
-    padding:12px 5px 12px 5px;
+    padding: 12px 5px 12px 5px;
     margin:0; 
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    /*border-right: 1px solid black; */
     display:block;
     text-decoration: none;
     color: black;
@@ -75,14 +73,31 @@ li a.active {
 li a:hover:not(.active) {
     background-color: lightgray;
     color: white;
-
-ul.meny li:first-child a{
     border: none;
 }
-ul.meny li:second-child a {
-    border:none;
+
+
+    /*hva er dette? vet ikke.... */
+    
+
+    
+ul.meny li:nth-child a(even){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
-ul.meny li:last-child a {
+/*
+ul.meny li:second-child{
+    background: red;
+}
+ul.meny li:last-child{
     border:none;
 }
 
+*/
+
+.pngLinker{
+    top: 70px;
+    right: 70px;
+    width: 45px;
+    height: 45px;
+}
