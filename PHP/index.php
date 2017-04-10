@@ -14,10 +14,16 @@ $connection = new PDO("mysql:host=localhost;dbname={$name};port={$port};", $user
 $statement = $connection->prepare('SELECT * from under50');
 $statement ->execute();
 
+$under50 = [];
 
-$row = $statement->fetch(PDO::FETCH_ASSOC);
+
+while($row = $statement->fetch(PDO::FETCH_ASSOC)){
+    
+    $under50[] = $row;
+}
+
 echo '<pre>';
-print_r($row);
+print_r($under50);
 
 echo "<h1> Jeg skjønner ikke DETTE!!!! *hylgråt* </h1>";
 

@@ -116,31 +116,33 @@ ul.meny li:nth-child(n+2){
 }
 
 /* FOOTER */
-#footer *{
-    bottom: 20px;
-	padding: 15px;
+#footer{
+    height: 45px;
     border-top: 1px solid black;
     color: black;
-    text-align: center; 
-    clear: both;
     font-family: font130013;
     font-size: 12px;
-    display: inline-block;
-    vertical-align: middle;
     width: 100%;
+}
+
+#footer p, img{
+    display: inline-block;
+    float: left;
+    padding: 15px;
 }
 
 #wLogoFooter{
     width: 35px;
     height: 35px;
-    padding: 4px;
+    padding: 15px;
     border: none;
+    left: 25%;
 }
 
 /* Media Queries */
 @media(max-width: 768px){
     #headerContainer,
-    #footer,
+    #footer p,
     ul.meny,
     .meny li,
     .meny a{
@@ -171,4 +173,12 @@ ul.meny li:nth-child(n+2){
         top: 26px;
     }
     
+    #wLogoFooter{
+        position: relative;
+        opacity:0;
+    }
+    
+    #footer p, img{
+    padding: 0;
+    }
 }
