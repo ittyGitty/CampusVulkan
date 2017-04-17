@@ -17,12 +17,53 @@
     <body>
         
         <?php $page = 'one'; include('PHP/header.php'); ?>
+        
+        <div id="frontCover">
+        
+            <img id="skolen" src="Bilder/p%C3%A5fuglen.jpg">
+        
+        
+        </div>
     
         
         <?php require 'PHP/footer.php'; ?>
         
         
+        
+        
+               <script type="text/javascript" src="/JS/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+        (function(){
+            
+            var documentElem = $(document),
+                nav = $('meny'),
+                lastScrollTop = 0;
+            
+            documentElem.on('scroll', function(){
+                var currentScrollTop = $(this).scrollTop();
+                
+                //scroll down
+                if (currentScrollTop > lastScrollTop) nav.addClass('hidden');
+                
+                //scroll up
+                else nav.removeClass('hidden');
+                
+                lastScrollTop = currentScrollTop; 
+            });
+            
+        })();
+
+
+
+
+
+</script>
     
 
     </body>
+    
+    
+ 
+    
 </html>

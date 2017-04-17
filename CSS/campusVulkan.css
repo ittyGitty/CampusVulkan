@@ -11,8 +11,9 @@
 /*Lucida Console*/
 @import url('https://www.fontify.me/wf/d5b9008d3538aedbecc7c3a8e8b5a3a6');
 
-@import url('https://www.fontify.me/wf/1167d5dd1156ddd43debbe88efce6bb5');
 /*swanky and moo moo*/
+@import url('https://www.fontify.me/wf/1167d5dd1156ddd43debbe88efce6bb5');
+
 
 
 html, body{
@@ -22,51 +23,54 @@ html, body{
         
         
     #headerContainer *{
-        position: absolute;
-        margin: 0;
+        position: fixed;
+        margin: 5px;
         }
         
         
     #headerContainer{
-        position: relative;
+        position: fixed;
         margin: auto;
         width: 100%;
-        background-color: white;
         }
     
     #topBorder{
         height: 40px;
         width: 100%;
         top: 27px;
-        background-image: url(../Bilder/wHeaderLiten.png);
+        background-image: url(/Bilder/wHeaderLiten.png);
+        position: fixed;
     }
 
     #CampusVulkan{
         font-family: font84115;
-        top: 10px;
+        font-size: 22px;
+        top: 15px;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
 
 #alleMenyBarn{
-    top 70px;
     width: 300px;
     height: 45px;
     right: 70px;
+    position: relative;
 }
 #alleMenyBarn*{
-    position: absolute;
     margin: auto;
+    position: absolute;
 }
 
 ul.meny {
-    padding-top: 70px;
+    top:0;
+    padding-top: 60px;
+    padding-left: 10px;
     width: 50%;
     list-style: none;
-    background-color: white;
     text-align:center;
     font-family: font130013; 
+    position: fixed;
 }
 .meny li { 
     display: inline-block;
@@ -78,7 +82,6 @@ ul.meny {
     text-align:center;
     padding: 12px 5px 12px 5px;
     margin:0; 
-    /*border-right: 1px solid black; */
     display:block;
     text-decoration: none;
     text-transform: uppercase;
@@ -103,22 +106,23 @@ ul.meny li:nth-child(n+2){
 /* Her følger CSS for små ikoner øverst høyre hjørne */
 
 .pngLinker{
-    top: 55px;
-    right: 70px;
-    width: 45px;
-    height: 45px;
+    top: 50px;
+    right: 100px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
 }
 
 #facebookLogo{
-    right: 220px;
+    right: 250px;
 }
 
 #westerdalsLogo{
-    right: 120px;
+    right: 150px;
 }
 
 #twitterLogo{
-    right: 170px;
+    right: 200px;
 }
 
 .pngLinker:hover:not(.active) {
@@ -133,11 +137,14 @@ ul.meny li:nth-child(n+2){
     font-family: font130013;
     font-size: 12px;
     width: 100%;
+    position: absolute;
 }
+
 
 #footer p, img{
     display: inline-block;
     float: left;
+    margin-left: 8%;
     padding: 15px;
 }
 
@@ -163,33 +170,52 @@ ul.meny li:nth-child(n+2){
   }
 
     ul.meny{
-        padding: 90px 0 0 0;
-        
-    }
-    
-    #topBorder{
-        top: 42px;
+        padding: 130px 0 0 0;
+        position: relative;
+        margin: 0;
     }
     
     #alleMenyBarn{
         position: relative;
-        top: 55px;
+        top: 30px;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
     
-    #CampusVulkan{
-        top: 26px;
-    }
-    
-    #wLogoFooter{
-        
-    }
-    
     #footer p, img{
     padding: 0;
     }
+    
+    #footer img{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+}
+
+
+/*Kode forside (HJEM)*/
+
+
+#frontCover{
+    position: relative;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    margin-top: 130px;
+    
+}
+#frontCover *{
+    position: absolute;
+}
+
+#skolen{
+    width: 88%;
+    height: 450px;
+    left: 6%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Her kommer koden til 50-LAPPEN */
@@ -201,6 +227,7 @@ ul.meny li:nth-child(n+2){
     height: 250px;
     background-color: #FC6A6D;
     position: relative;
+    margin-top: 130px;
     
 }
 
@@ -269,6 +296,7 @@ p.mainText {
     height: 250px;
     background-color: rgb(217,244,234);
     position: relative;
+    margin-top: 130px;
     
 }
 
@@ -279,6 +307,7 @@ p.mainText {
     height: 250px;
     background-color: rgb(217,244,234);
     position: relative;
+    margin-top: 130px;
     
 }
 
