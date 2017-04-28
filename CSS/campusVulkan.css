@@ -40,6 +40,7 @@ html, body{
         top: 27px;
         background-image: url(/Bilder/wHeaderLiten.png);
         position: fixed;
+        transition: top 0.2s ease-in-out;
     }
 
     #CampusVulkan{
@@ -56,6 +57,7 @@ html, body{
     height: 45px;
     right: 70px;
     position: relative;
+    transition: top 0.2s ease-in-out;
 }
 #alleMenyBarn*{
     margin: auto;
@@ -111,6 +113,7 @@ ul.meny li:nth-child(n+2){
     width: 40px;
     height: 40px;
     position: fixed;
+    transition: top 0.2s ease-in-out;
 }
 
 #facebookLogo{
@@ -128,6 +131,7 @@ ul.meny li:nth-child(n+2){
 .pngLinker:hover:not(.active) {
     opacity: 0.5;
 }
+
 
 /* FOOTER */
 #footer{
@@ -210,12 +214,13 @@ ul.meny li:nth-child(n+2){
     position: absolute;
 }
 
-#skolen{
+#slide{
     width: 88%;
     height: 450px;
     left: 6%;
     margin: 0;
     padding: 0;
+    transition-property: all;
 }
 
 /* Her kommer koden til 50-LAPPEN */
