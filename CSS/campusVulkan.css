@@ -57,7 +57,7 @@ html, body{
     height: 45px;
     right: 70px;
     position: relative;
-    transition: top 0.2s ease-in-out;
+    
 }
 #alleMenyBarn*{
     margin: auto;
@@ -67,12 +67,13 @@ html, body{
 ul.meny {
     top:0;
     padding-top: 60px;
-    padding-left: 10px;
+    padding-left: 15px;
     width: 50%;
     list-style: none;
     text-align:center;
     font-family: font130013; 
     position: fixed;
+    transition: top 0.2s ease-in-out;
 }
 .meny li { 
     display: inline-block;
@@ -131,6 +132,15 @@ ul.meny li:nth-child(n+2){
 .pngLinker:hover:not(.active) {
     opacity: 0.5;
 }
+
+
+/*CSS for at scroll-Header skal fungere*/
+
+
+.nav-up {
+    top: -70px;
+}
+
 
 
 /* FOOTER */
@@ -195,6 +205,10 @@ ul.meny li:nth-child(n+2){
         margin-left: 50%;
         margin-right: 50%;
     }
+    
+    #slider{
+        margin-top: 90px;
+    }
 }
 
 
@@ -208,7 +222,7 @@ ul.meny li:nth-child(n+2){
     background-color: white;
     width: 100%;
     height: 600px;
-    margin-top: 130px;
+    margin-top: 150px;
 }
 #slider img {
     transition: opacity 3s;
