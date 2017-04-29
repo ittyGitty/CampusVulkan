@@ -201,6 +201,32 @@ ul.meny li:nth-child(n+2){
 /*Kode forside (HJEM)*/
 
 
+
+#slider {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    margin-top: 130px;
+}
+#slider img {
+    transition: opacity 3s;
+    position: absolute;
+    opacity:0;
+    width: 88%;
+    height: 450px;
+    left: 6%;
+    margin: 0;
+    padding: 0;
+}
+#slider img.fadeIn {
+    opacity:1;
+}
+
+
+
+/* DETTE HØRER TIL DEN SOM FUNGERER MEN SOM ER UTEN EFFEKT
 #frontCover{
     position: relative;
     margin: auto;
@@ -210,6 +236,10 @@ ul.meny li:nth-child(n+2){
     margin-top: 130px;
     
 }
+
+
+
+
 #frontCover *{
     position: absolute;
 }
@@ -220,7 +250,18 @@ ul.meny li:nth-child(n+2){
     left: 6%;
     margin: 0;
     padding: 0;
-    transition-property: all;
+    opacity:1;
+}
+
+/* DETTE HØRER TIL DEN JEG IKKE FÅR TIL Å FUNGERE
+
+#slider {
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#slider.fadeOut {
+    opacity:0;
 }
 
 /* Her kommer koden til 50-LAPPEN */
