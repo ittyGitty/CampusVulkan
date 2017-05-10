@@ -11,10 +11,17 @@
 /*Lucida Console*/
 @import url('https://www.fontify.me/wf/d5b9008d3538aedbecc7c3a8e8b5a3a6');
 
-/*swanky and moo moo*/
 @import url('https://www.fontify.me/wf/1167d5dd1156ddd43debbe88efce6bb5');
+/*swanky and moo moo*/
 
+/*Summer Fling Medium Overskrift*/
+@import url('https://www.fontify.me/wf/bfe9b63f8c57f2ce8a4fe3b9451178d8');
 
+/*Rabelo Heavy Undertekst*/
+@import url('https://www.fontify.me/wf/51f786f891819f320f153d750cf0fc7f');
+
+/*Unique Light Brødtekst*/
+@import url('https://www.fontify.me/wf/a1924907d51c265f1f5478b7f744203b');
 
 html, body{
         background-color: white;           
@@ -23,57 +30,51 @@ html, body{
         
         
     #headerContainer *{
-        position: fixed;
-        margin: 5px;
+        position: absolute;
+        margin: 0;
         }
         
         
     #headerContainer{
-        position: fixed;
+        position: relative;
         margin: auto;
         width: 100%;
+        background-color: white;
         }
     
     #topBorder{
         height: 40px;
         width: 100%;
         top: 27px;
-        background-image: url(/Bilder/wHeaderLiten.png);
-        position: fixed;
-        transition: top 0.2s ease-in-out;
+        background-image: url(../Bilder/wHeaderLiten.png);
     }
 
     #CampusVulkan{
         font-family: font84115;
-        font-size: 22px;
-        top: 15px;
+        top: 10px;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
 
 #alleMenyBarn{
+    top 70px;
     width: 300px;
     height: 45px;
     right: 70px;
-    position: relative;
-    
 }
 #alleMenyBarn*{
-    margin: auto;
     position: absolute;
+    margin: auto;
 }
 
 ul.meny {
-    top:0;
-    padding-top: 60px;
-    padding-left: 15px;
+    padding-top: 70px;
     width: 50%;
     list-style: none;
+    background-color: white;
     text-align:center;
     font-family: font130013; 
-    position: fixed;
-    transition: top 0.2s ease-in-out;
 }
 .meny li { 
     display: inline-block;
@@ -85,6 +86,7 @@ ul.meny {
     text-align:center;
     padding: 12px 5px 12px 5px;
     margin:0; 
+    /*border-right: 1px solid black; */
     display:block;
     text-decoration: none;
     text-transform: uppercase;
@@ -109,39 +111,27 @@ ul.meny li:nth-child(n+2){
 /* Her følger CSS for små ikoner øverst høyre hjørne */
 
 .pngLinker{
-    top: 50px;
-    right: 100px;
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    transition: top 0.2s ease-in-out;
+    top: 55px;
+    right: 70px;
+    width: 45px;
+    height: 45px;
 }
 
 #facebookLogo{
-    right: 250px;
+    right: 220px;
 }
 
 #westerdalsLogo{
-    right: 150px;
+    right: 120px;
 }
 
 #twitterLogo{
-    right: 200px;
+    right: 170px;
 }
 
 .pngLinker:hover:not(.active) {
     opacity: 0.5;
 }
-
-
-/*CSS for at scroll-Header skal fungere*/
-
-
-.nav-up {
-    top: -70px;
-}
-
-
 
 /* FOOTER */
 #footer{
@@ -151,14 +141,12 @@ ul.meny li:nth-child(n+2){
     font-family: font130013;
     font-size: 12px;
     width: 100%;
-    position: absolute;
+    clear: both;
 }
-
 
 #footer p, img{
     display: inline-block;
     float: left;
-    margin-left: 8%;
     padding: 15px;
 }
 
@@ -184,73 +172,42 @@ ul.meny li:nth-child(n+2){
   }
 
     ul.meny{
-        padding: 130px 0 0 0;
-        position: relative;
-        margin: 0;
+        padding: 90px 0 0 0;
+        
+    }
+    
+    #topBorder{
+        top: 42px;
     }
     
     #alleMenyBarn{
         position: relative;
-        top: 30px;
+        top: 55px;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
     
+    #CampusVulkan{
+        top: 26px;
+    }
+    
+    #wLogoFooter{
+        
+    }
+    
     #footer p, img{
     padding: 0;
     }
-    
-    #footer img{
-        margin-left: 50%;
-        margin-right: 50%;
-    }
-    
-    #slider{
-        margin-top: 90px;
-    }
 }
 
 
-/*Kode forside (HJEM)*/
-
-
-
-#slider {
-    position: relative;
-    margin: auto;
-    background-color: white;
-    width: 100%;
-    height: 600px;
-    margin-top: 150px;
-}
-#slider img {
-    transition: opacity 3s;
-    position: absolute;
-    opacity:0;
-    width: 88%;
-    height: 450px;
-    left: 6%;
-    margin: 0;
-    padding: 0;
-}
-#slider img.fadeIn {
-    opacity:1;
-}
-
-
-
-/* Her kommer koden til 50-LAPPEN */
-
-
-
+/* SUBPAGE 50-LAPPEN */
 #Redbox {
     width: 100%;
     height: 250px;
     background-color: #FC6A6D;
     position: relative;
-    margin-top: 130px;
-    
 }
 
 p.subText {
@@ -289,27 +246,93 @@ p.mainText {
 }
 
 
-/* BOXES */
-#boxes{
-	margin-top: 40px;
+/* 50-LAPPEN BOXES */
+.addChallengeButton {
+    background-color: #FC6A6D;
+    border: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 100%;
     position: relative;
-    width: 80%;
-    height: 600px;
-    margin: auto;
+    left: 50%;
 }
 
-#boxes *{
-    postion: absolute;
-}
-
-.box{
+#box{
+    height: 300px;
+    width: 23%;
+    background-color: #282828;
+    left: 20px;
+    position: relative;
+    margin-bottom: 20px;
     float: left;
-	text-align: center;
-	width: 177px;
-	padding-right: 2px;
-	margin: 10px;
-	background-color: lightcyan;
+    margin: 5px;
 }
+
+#imageBox{
+    height: 200px;
+    width: 100%;
+    background-color: #FC6A6D;
+    position: relative;
+}
+
+#imageBox a{
+    font-size: 40px;
+    color: #fff;
+}
+#submitterText{
+    font-size: 25px;
+    color: #fff;
+}
+
+
+
+/* SUBPAGE COMMENTSECTION */
+textarea{
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    resize: none;
+    position: relative;
+    left: 20px;
+}
+
+button{
+    position: relative;
+    left: 20px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #282828;
+    border: none;
+    color: #fff;
+    font-family: arial;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.comment-box{
+    width: 384px;
+    padding: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 20px;
+    border: 1px solid black;
+}
+
+.comment-box p{
+    font-family: arial;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282828;
+    font-weight: 100;   
+}
+
 
 /* Her kommer koden til gratis */
 
@@ -318,7 +341,6 @@ p.mainText {
     height: 250px;
     background-color: rgb(217,244,234);
     position: relative;
-    margin-top: 130px;
     
 }
 
@@ -329,8 +351,58 @@ p.mainText {
     height: 250px;
     background-color: rgb(217,244,234);
     position: relative;
-    margin-top: 130px;
     
 }
 
+.grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 2rem;
+}
 
+.containers {
+    margin: auto;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-size: 500px 300px;
+    overflow: hidden;
+}
+
+#space {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    
+}
+
+/*Tekster og fonter*/
+
+#Bilder {
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+#Overskrift {
+    font-size: 40px;
+    font-family: font143016;
+    text-align: center;
+}
+
+#Undertekst{
+    font-size: 20px;
+    font-family: font143087;
+    font-style: italic;
+    text-align: center;
+}
+
+#Brodtekst {
+    font-size: 16px;
+    font-family: font142997;
+    text-align: center;
+
+}

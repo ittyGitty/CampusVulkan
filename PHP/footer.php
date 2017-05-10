@@ -1,9 +1,9 @@
 <footer>
         <div id="footer">
-            <p>Adresse: Vulkan 19, 0178 Oslo</p>     
-            <p>E-post: post@westerdals.no</p>  
-            <p>Tlf.:22 05 75 50</p> 
-            <p>Copyright &copy; gruppe 8 -2017</p>
+            <p>&ensp; Adresse: Vulkan 19, 0178 Oslo &ensp;</p>     
+            <p>&ensp; E-post: post@westerdals.no &ensp;</p>  
+            <p>&ensp; Tlf.:22 05 75 50 &ensp;</p> 
+            <p>&ensp; Copyright &copy; gruppe 8 -2017 &ensp;</p>
             <img id="wLogoFooter" src="/Bilder/w.png">
         </div>
     </footer>

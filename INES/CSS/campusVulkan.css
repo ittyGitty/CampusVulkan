@@ -1,0 +1,336 @@
+/* Header kodet av Ine Målbakken*/
+/*DIN Next LT Pro Light*/
+@import url('https://www.fontify.me/wf/5791fea5cf3ff4352ab8e7f3cccc8e23');   
+
+/*DIN Neuzeit Grotesk Bold Cond*/
+@import url('https://www.fontify.me/wf/a43ffc0f9675eb7bb6611c0db69d7ae9');
+
+/*Lulo Clean One Bold*/
+@import url('https://www.fontify.me/wf/42216a06e8977da4ccec1ff4702d0922');
+
+/*Lucida Console*/
+@import url('https://www.fontify.me/wf/d5b9008d3538aedbecc7c3a8e8b5a3a6');
+
+/*swanky and moo moo*/
+@import url('https://www.fontify.me/wf/1167d5dd1156ddd43debbe88efce6bb5');
+
+
+
+html, body{
+        background-color: white;           
+        margin: 0;
+        }
+        
+        
+    #headerContainer *{
+        position: fixed;
+        margin: 5px;
+        }
+        
+        
+    #headerContainer{
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        }
+    
+    #topBorder{
+        height: 40px;
+        width: 100%;
+        top: 27px;
+        background-image: url(/Bilder/wHeaderLiten.png);
+        position: fixed;
+        transition: top 0.2s ease-in-out;
+    }
+
+    #CampusVulkan{
+        font-family: font84115;
+        font-size: 22px;
+        top: 15px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+#alleMenyBarn{
+    width: 300px;
+    height: 45px;
+    right: 70px;
+    position: relative;
+    
+}
+#alleMenyBarn*{
+    margin: auto;
+    position: absolute;
+}
+
+ul.meny {
+    top:0;
+    padding-top: 60px;
+    padding-left: 15px;
+    width: 50%;
+    list-style: none;
+    text-align:center;
+    font-family: font130013; 
+    position: fixed;
+    transition: top 0.2s ease-in-out;
+}
+.meny li { 
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+.meny a {
+    text-align:center;
+    padding: 12px 5px 12px 5px;
+    margin:0; 
+    display:block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+li a.active {
+    background-color: black;
+    color: white;
+} 
+
+li a:hover:not(.active) {
+    background-color: lightgray;
+    color: white;
+    border: none;
+}
+    
+ul.meny li:nth-child(n+2){
+    border-left: 1px solid black;
+}
+
+/* Her følger CSS for små ikoner øverst høyre hjørne */
+
+.pngLinker{
+    top: 50px;
+    right: 100px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    transition: top 0.2s ease-in-out;
+}
+
+#facebookLogo{
+    right: 250px;
+}
+
+#westerdalsLogo{
+    right: 150px;
+}
+
+#twitterLogo{
+    right: 200px;
+}
+
+.pngLinker:hover:not(.active) {
+    opacity: 0.5;
+}
+
+
+/*CSS for at scroll-Header skal fungere*/
+
+
+.nav-up {
+    top: -70px;
+}
+
+
+
+/* FOOTER */
+#footer{
+    height: 45px;
+    border-top: 1px solid black;
+    color: black;
+    font-family: font130013;
+    font-size: 12px;
+    width: 100%;
+    position: absolute;
+}
+
+
+#footer p, img{
+    display: inline-block;
+    float: left;
+    margin-left: 8%;
+    padding: 15px;
+}
+
+#wLogoFooter{
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+    border: none;
+    left: 25%;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    #headerContainer,
+    #footer p,
+    ul.meny,
+    .meny li,
+    .meny a{
+    float:none;
+    text-align:center;
+    width:100%;
+    border: none;
+  }
+
+    ul.meny{
+        padding: 130px 0 0 0;
+        position: relative;
+        margin: 0;
+    }
+    
+    #alleMenyBarn{
+        position: relative;
+        top: 30px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #footer p, img{
+    padding: 0;
+    }
+    
+    #footer img{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    
+    #slider{
+        margin-top: 90px;
+    }
+}
+
+
+/*Kode forside (HJEM)*/
+
+
+
+#slider {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+}
+#slider img {
+    transition: opacity 3s;
+    position: absolute;
+    opacity:0;
+    width: 88%;
+    height: 450px;
+    left: 6%;
+    margin: 0;
+    padding: 0;
+}
+#slider img.fadeIn {
+    opacity:1;
+}
+
+
+
+/* Her kommer koden til 50-LAPPEN */
+
+
+
+#Redbox {
+    width: 100%;
+    height: 250px;
+    background-color: #FC6A6D;
+    position: relative;
+    margin-top: 130px;
+    
+}
+
+p.subText {
+    font-family: font71543;
+    top: 10%;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin: 0;
+}
+
+p.mainText {
+    font-family: font97579;
+    top: 10%;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 150px;
+    margin: 0;
+}
+
+#winPrize{
+	text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: font97579;
+}
+
+#winPrize h1{
+	margin: 20px;
+    font-family: font138488;
+    font-size: 40px;
+}
+
+
+/* BOXES */
+#boxes{
+	margin-top: 40px;
+    position: relative;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+}
+
+#boxes *{
+    postion: absolute;
+}
+
+.box{
+    float: left;
+	text-align: center;
+	width: 177px;
+	padding-right: 2px;
+	margin: 10px;
+	background-color: lightcyan;
+}
+
+/* Her kommer koden til gratis */
+
+#Greenbox {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(217,244,234);
+    position: relative;
+    margin-top: 130px;
+    
+}
+
+/* Her kommer koden til lonningsdag */
+
+#Cyanbox {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(217,244,234);
+    position: relative;
+    margin-top: 130px;
+    
+}
+
+
